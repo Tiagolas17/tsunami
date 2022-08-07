@@ -15,10 +15,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 from sys import platform
 
-if platform == 'win32':
-    unicodeVar = 'utf-16'
-else:
-    unicodeVar = 'utf-8'
+unicodeVar = 'utf-8'
 
 matplotlib.use('Agg')
 matplotlib.rcParams.update({'font.size': 16})
